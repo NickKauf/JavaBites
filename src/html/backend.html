@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+</head>
+<body style="background: darkseagreen">
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-md navbar-light bg-success bg-gradient">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi bi-journal-code" style="font-size: 32px"></i>
+        </a>
+        <button class="navbar-toggler"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><h5>Java Bites Blog</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="backend.html"><h5>Object-oriented Java</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="frontend.html"><h5>HTML/CSS/Bootstrap</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bootcampinfo.html"><h5>Bootcamp Info</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html"><h5>About Me</h5></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--POST 1-->
+<div class="card m-4" id="post1">
+    <div class="card-header">
+        <h4>Metaphors for OOP</h4>
+        <small class="text-muted">July 23, 2021</small>
+    </div>
+    <div class="card-body">
+        <img src="../media/animals.png" alt="animals" class="img-thumbnail">
+        <p style="font-size: 16px">When we learned about inheritance and composition in Java,
+            we were given some simple analogies about animals, vehicles, and people.
+            Recently I came across a thread of CS teachers discussing what analogies they use to
+            teach object oriented programming to their students. Not surprisingly, several replies mentioned
+            using humans, vehicles, or animals as an analogy for OOP concepts. There were also some analogies I
+            hadn’t heard before, such as the parts of speech analogy where objects = nouns, methods = verbs,
+            properties=adjectives and so forth.
+        </p>
+        <p style="font-size: 16px">
+        The most interesting replies, however, were arguing why certain
+            analogies— or even all analogies— were inappropriate to describe OOP. One commenter noted that they
+            hate using “things” as an analogy for classes, which they believed should be understood better as
+            abstractions of behavior. Another commenter argued that inheritance was too dominant in OOP analogies,
+            which should focus on composition (they preferred the vehicle analogy). Several people noted that all
+            analogies fall short of describing how actual classes behave in programming in terms of sending messages
+            back and forth— but some conceded they preferred imagining parts or components that do something since
+            it was, after all, the original philosophy behind OOP. As a beginner, I’m still not sure which analogy
+            is leading me towards a better understanding of the possibilities of OOP, but I did find this
+            meta-discussion helpful in its own way and a good reminder that an analogy can only go so far.
+            You can read the whole thread
+            <a href="https://cseducators.stackexchange.com/questions/146/what-is-a-good-analogy-for-the-object-oriented-paradigm">
+                here
+            </a>.
+        </p>
+    </div>
+</div>
+
+<!--POST 2-->
+
+<div class="card m-4" id="post2">
+    <div class="card-header">
+        <h4>How to Override Your Parents</h4>
+        <small class="text-muted">July 23, 2021</small>
+    </div>
+    <div class="card-body">
+        <p style="font-size: 16px">"In any object-oriented programming language,
+            Overriding is a feature that allows a subclass or child class to provide a specific implementation
+            of a method that is already provided by one of its super-classes or parent classes.
+            A method in the child class, such as fly in the example below, does not need to be overridden
+            because it does not exist in the parent class. However, the sleep method exists in the parent class
+            but it does something different (in this case returns a different string).
+            Since the sleep method exists in the parent class the sleep method is overridden using
+            the annotation @Override.
+            Override is not the same as overload."
+        </p>
+        <p style="font-size: 16px">
+            Parent Class:
+            <pre>
+                <code>
+            public class Animal {
+            private String animalName;
+            //public methods are visible to the calling class (ie.. Main)
+            public String sleep() {
+            return "An animal sleeps...";
+            }
+            public String eat() {
+            return "An animal eats...";
+            }
+            }
+                </code>
+            </pre>
+            Child Class:
+            <pre>
+                <code>
+            // we can extend a class into a more specific type
+            // by using the keyword: extends
+
+            public class Bird extends Animal {
+
+            //we can add methods specific to our Bird class
+
+                    public String fly(){
+                        return "The bird is flying";
+                    }
+
+                    //we can override methods from the parent class
+                    @Override
+                    public String sleep(){
+                        return "The bird is sleeping";
+                    }
+                }
+                </code>
+                </pre>
+
+        </p>
+
+        <small class="text-muted">source: bootcamp canvas assignment</small>
+    </div>
+</div>
+
+
+
+
+<!--FOOTER-->
+<footer>
+    <div align="center">
+        <p class="text-dark">
+            Site concept by <a href="https://github.com/NickKauf/">nkauf</a>
+        </p>
+
+    </div>
+</footer>
+</body>
+</html>

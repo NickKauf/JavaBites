@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+</head>
+<body style="background: darkseagreen">
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-md navbar-light bg-success bg-gradient">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi bi-journal-code" style="font-size: 32px"></i>
+        </a>
+        <button class="navbar-toggler"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><h5>Java Bites Blog</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="backend.html"><h5>Object-oriented Java</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="frontend.html"><h5>HTML/CSS/Bootstrap</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bootcampinfo.html"><h5>Bootcamp Info</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html"><h5>About Me</h5></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--TITLE-->
+
+    <div align="center">
+        <p style="font-family: 'Libre Barcode 39 Text', cursive; font-size: 48px;">Java Bites: Web Dev in Small Portions</p>
+    </div>
+
+
+<!--INTRO-->
+<div class="card m-4">
+    <div class="card-header">
+        Quote of The Day
+    </div>
+    <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <h6>"I do not know from what associations the hippopotamus got into the chess board,
+                but although the spectators were convinced that I was continuing to study the position,
+                I, despite my humanitarian education, was trying at this time to work out:
+                just how WOULD you drag a hippopotamus out of the marsh? I remember how jacks figured in my thoughts,
+                as well as levers, helicopters, and even a rope ladder. After a lengthy consideration
+                I admitted defeat as an engineer, and thought spitefully to myself: "Well, just let it drown!"
+                And suddenly the hippopotamus disappeared. Went right off the chessboard just as he had come on...
+            of his own accord! And straightaway the position did not appear to be so complicated"</h6>
+            <br>
+            <footer class="blockquote-footer">Mikhail Tal,<cite title="Source Title"> The Life and Games of Mikhail Tal</cite></footer>
+        </blockquote>
+    </div>
+</div>
+
+<!--GRID-->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-4 gy-4 m-2">
+    <div class="col themed-grid-col">
+        <div class="card p-1">
+            <h5 class="card-title">Metaphors for OOP</h5>
+            <h6 class="card-title" style="font-weight: bold;">July 23, 2021</h6>
+            <p class="card-text">When we learned about inheritance and composition in Java, we were given some simple analogies about animals, vehicles, and people. Recently I came across a thread of CS teachers discussing what analogies they use to teach object oriented programming to their students...</p>
+            <a href="backend.html#post1" class="btn btn-success">Read More</a>
+            </p>
+        </div>
+    </div>
+    <div class="col themed-grid-col">
+        <div class="card p-1">
+            <h5 class="card-title">How to Override Your Parents</h5>
+            <h6 class="card-title" style="font-weight: bold;">July 23, 2021</h6>
+            <p class="card-text">"In any object-oriented programming language, Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes..." </p>
+            <a href="backend.html#post2" class="btn btn-success">Read More</a>
+            </p>
+        </div>
+    </div>
+    <div class="col themed-grid-col">
+        <div class="card p-1">
+            <h5 class="card-title">How to Make a Rounded Profile Image With CSS</h5>
+            <h6 class="card-title" style="font-weight: bold;">July 23, 2021</h6>
+            <p class="card-text">Today I learned how to make rounded profile pictures with CSS, and it’s really easy. Here’s how... </p>
+            <a href="frontend.html#post1" class="btn btn-success">Read More</a>
+            </p>
+        </div>
+    </div>
+    <div class="col themed-grid-col">
+        <div class="card p-1">
+            <h5 class="card-title">Package Managers and How We All Depend on One Another</h5>
+            <h6 class="card-title" style="font-weight: bold;">July 23, 2021</h6>
+            <p class="card-text">We learned that you can implement Bootstrap in an html page with a simple link in the header. It turns out web apps implement lots of code from other places using package managers like NPM, which says it’s the world’s largest software registry. Recently, I read about case in 2016 where...</p>
+            <a href="frontend.html#post2" class="btn btn-success">Read More</a>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+<!--FOOTER-->
+<footer>
+    <div align="center">
+        <p class="text-dark">
+            Site concept by <a href="https://github.com/NickKauf/">nkauf</a>
+        </p>
+
+    </div>
+</footer>
+</body>
+</html>
